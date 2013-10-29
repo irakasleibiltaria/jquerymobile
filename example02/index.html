@@ -18,7 +18,7 @@
         </div><!-- /header -->
 
         <div data-role="content">
-            <p>swipe page.</p>
+            <p>swipe left.</p>
 
         </div><!-- /content -->
 
@@ -36,7 +36,7 @@
         </div><!-- /header -->
 
         <div data-role="content">
-           <p>swipe page to return.</p>
+           <p>swipe right to return.</p>
         </div><!-- /content -->
 
         <div data-role="footer">
@@ -49,11 +49,11 @@
 <script>
 
 $(document).ready(function() {
-  $("#foo").bind('swipe',function(event){
+  $("#foo").bind('swipeleft',function(event){
     $.mobile.changePage($("#audi"));
   });
 
-  $("#audi").bind('swipe',function(event){
+  $("#audi").bind('swiperight',function(event){
     $.mobile.changePage($("#foo"));
   });
 
